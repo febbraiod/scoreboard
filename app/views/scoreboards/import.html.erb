@@ -1,0 +1,6 @@
+<h1>Import Json:</h1>
+
+<%= form_tag parse_path, multipart: true do %>
+  <%= file_field_tag :file %><br>
+  <%= submit_tag "Import CSV" %>
+<% end %>

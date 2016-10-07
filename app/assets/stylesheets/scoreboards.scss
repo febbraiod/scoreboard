@@ -1,0 +1,12 @@
+// Place all the styles related to the scoreboards controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.mainscoreboard {
+  background: image-url('mainscoreboard.png');
+  max-width: 970px;
+  max-height: 250px;
+  border: solid 1px; 
+  display: inline-block;
+
+}
