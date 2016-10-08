@@ -23,7 +23,6 @@ $(function() {
 
 function banner_click(){
   $('.collapsed_board').click(function () {
-      alert('clicked');
       var defaultHeight = "66px";
       var expandHeight = "250px";
       $(this).css('background', '#3d4c49');
@@ -38,4 +37,23 @@ function banner_click(){
 function switch_boards(){
   $('.collapsed_board').hide();
   $('.league_scoreboard').show();
+}
+
+function getGame(game_id){
+  $.get('/game', {game_id: game_id}).done(function(game_data){
+      // $('#getNotes').hide();
+      // $('#case_notes').css('display', 'block');
+      // var notes = data.notes;
+      // for(var i = 0; i < notes.length ; i++){
+      //   var note = new Note(notes[i].id, notes[i].content, notes[i].user, new Date(notes[i].created_at));
+      //   renderNote(note);  
+      // }
+  });
+}
+
+function setGameBinder(){
+  $('#game_score').on('click', function(){
+    var case_id = $(this).data('game_id');
+    getGame(game_id);
+  });
 }
