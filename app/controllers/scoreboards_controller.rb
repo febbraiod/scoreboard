@@ -9,7 +9,7 @@ class ScoreboardsController < ApplicationController
   end
 
   def home
-    @scoreboard = Scoreboard.first
+    @scoreboard = JSON.parse( File.read("public/mlb.json"))['sports'][0]['leagues'][0]['events']
   end
 
 end

@@ -1,24 +1,46 @@
-<div class='container-fluid' style='max-width: 1280px;'>
+<div class='container-fluid'>
   <div class='row'>
     <%= image_tag('ESPNheader.png', style: 'width: 100%')%>
   </div>
 
+  <div class='row tester_class' style='background-color: #ededf0;'>
+      <section class='collapsed_board' style='width: 75.5%;'>
+        <span id='collapsed_text'><u>Get your scores here</u> | "GET YOUR BEER HERE!"</span>
+      </section>
+  </div>
   
-  <div class='row' style='text-align: center; background-color: #ededf0;'>
-    <div class='mainscoreboard' style='width: 75.5%'>
-        <div class='col-sm-4' style='border: solid 1px'>
-          <p>Around the league with</p>
-        </div>
-        <%@scoreboard.games.each_with_index do |game, i|%>
-          <%if i == 0 || i % 4 ==0%>
-            <div class='col-sm-2' style='border: solid 1px'>
+  <div class='row league_scoreboard'>
+    <section class='mainscoreboard' style='width: 75.5%;'>
+        <div class='col-sm-4'></div>
+        <%@scoreboard.each_with_index do |game, i|%>
+          <%if i == 0 || i % 4 == 0%>
+            <div class='col-sm-2' style='padding-bottom: 3%'>
           <%end%>
-              <%=game['id']%><br>
+              <div class='row' style='display: inline;'>
+              <%game['id']%>
+                <div class='score' style='margin-right: 7%;'>
+                  <p style='margin-bottom: 2px;'>
+                  <%=game['competitions'][0]['competitors'][0]['team']['abbreviation']%> <%=game['competitions'][0]['competitors'][0]['score']%>
+                  </p>
+                  <p><%=game['competitions'][0]['competitors'][1]['team']['abbreviation']%> <%=game['competitions'][0]['competitors'][1]['score']%></p>
+                </div>
+                <div style='margin-top: -15%'>
+                  <%if game['competitions'][0]['status']['id'] == 1%>
+                    <p>N</p>
+                  <%elsif game['competitions'][0]['status']['id'] == 2%>
+                    <p><%= game['competitions'][0]['period']%>in</p>
+                  <%elsif game['competitions'][0]['status']['id'] == 3%>
+                    <p>F</p>
+                  <%else%>
+                    <p>?</p>
+                  <%end%>
+                </div>
+              </div>
           <%if [3,7,11,15].include?(i)%>
             </div>
           <%end%>
         <%end%>
-    </div>
+    </section>
   </div>
 
   <div class='row'>

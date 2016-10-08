@@ -3,10 +3,53 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .mainscoreboard {
-  background: image-url('mainscoreboard.png');
+  background: image-url('mainscoreboardwithbud.jpg');
   max-width: 970px;
   max-height: 250px;
-  border: solid 1px; 
   display: inline-block;
 
+}
+
+.league_scoreboard {
+  text-align: center; 
+  background-color: #ededf0; 
+  display: none;
+}
+
+.tester_class {
+  text-align: center; 
+}
+
+.collapsed_board {
+  background-image: url('collapsedAd.jpg');
+  background-size: 100% 100%;
+  max-width: 970px;
+  max-height: 66px;
+  display: inline-block;
+  text-align: left;
+  color: white;
+}
+
+.score {
+  float: left; 
+  width: 40%;
+  margin-bottom: -20px;
+  margin-top: -10px;
+  text-align: left;
+  }
+
+p {
+  font-family: "Century Gothic", CenturyGothic, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: white;
+}  
+
+#collapsed_text {
+  font-family: "Helvetica Neue", Helvetica, "Century Gothic", CenturyGothic, Arial, sans-serif;
+  font-style: italic;
+  padding-left: 6.5%;
+  font-size: 1.9em;
+  line-height: 66px;
 }

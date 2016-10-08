@@ -11,6 +11,31 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(function() {
+    banner_click();
+});
+
+
+function banner_click(){
+  $('.collapsed_board').click(function () {
+      alert('clicked');
+      var defaultHeight = "66px";
+      var expandHeight = "250px";
+      $(this).css('background', '#3d4c49');
+      $(this).html('');
+      $(this).animate({'min-height': expandHeight}, 300);
+      setTimeout(switch_boards, 300);
+
+  });
+}
+
+
+function switch_boards(){
+  $('.collapsed_board').hide();
+  $('.league_scoreboard').show();
+}

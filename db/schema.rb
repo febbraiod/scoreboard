@@ -24,6 +24,11 @@ ActiveRecord::Schema.define(version: 20161007181658) do
     t.hstore   "game_obj"
   end
 
+  create_table "games_tables", force: :cascade do |t|
+    t.integer "game_id"
+    t.hstore  "game_obj"
+  end
+
   create_table "scoreboards", force: :cascade do |t|
     t.hstore "games", default: [], null: false, array: true
   end
