@@ -95,7 +95,7 @@ function bind_detail(){
 
 // get details on hover
 function hover_home(){
-  $('.home_team').hover(
+  $('#home_hover').hover(
     function(){
       $('#home_popup').fadeIn(200);
     },
@@ -106,7 +106,7 @@ function hover_home(){
 }
 
 function hover_away(){
-  $('.away_team').hover(
+  $('#away_hover').hover(
     function(){
       $('#away_popup').fadeIn(200);
     },

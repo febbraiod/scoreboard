@@ -62154,3 +62154,324 @@ Started GET "/assets/CAN-c660eff95be42743550799ceb884c44e9b5fe06f968f3d2dda69080
 
 
 Started GET "/assets/ESPNbottom-5a00b031c4fc70aa5d86aafe8a670c0026267a5c3a91feecb646e91058cd9f48.png" for ::1 at 2016-10-09 18:11:15 -0400
+
+
+Started GET "/game?game_id=350506114" for ::1 at 2016-10-09 18:12:03 -0400
+Processing by ScoreboardsController#game as */*
+  Parameters: {"game_id"=>"350506114"}
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game?game_id=350506109" for ::1 at 2016-10-09 18:12:06 -0400
+Processing by ScoreboardsController#game as */*
+  Parameters: {"game_id"=>"350506109"}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-09 18:12:11 -0400
+Processing by ScoreboardsController#home as HTML
+  Rendered scoreboards/home.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 53ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scoreboards.self-7702e68b6e7310deb9af5ed4ed0fd611085cd2907f39211771d69985b7bdb6a8.css?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/application.self-696845e2b5e293123d61ff0e709f7c10184cd763ad0691e45cd9a44e8bd59a24.css?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/scoreboards.self-79524bff96deac6be1e8290b7d659ef0b4cf8f77e69d2a078239f5897599c141.js?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/ESPNheader-b51c6259cc249e9623412e7417e88f82e56d2fb2a40008ca0a410db4a4144994.png" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/" for ::1 at 2016-10-09 18:12:11 -0400
+Processing by ScoreboardsController#home as HTML
+  Rendered scoreboards/home.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 58ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/CAN-c660eff95be42743550799ceb884c44e9b5fe06f968f3d2dda69080c12544386.png" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/assets/ESPNbottom-5a00b031c4fc70aa5d86aafe8a670c0026267a5c3a91feecb646e91058cd9f48.png" for ::1 at 2016-10-09 18:12:11 -0400
+
+
+Started GET "/game?game_id=350506118" for ::1 at 2016-10-09 18:12:25 -0400
+Processing by ScoreboardsController#game as */*
+  Parameters: {"game_id"=>"350506118"}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game?game_id=350506227" for ::1 at 2016-10-09 18:14:09 -0400
+Processing by ScoreboardsController#game as */*
+  Parameters: {"game_id"=>"350506227"}
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game?game_id=350506126" for ::1 at 2016-10-09 18:15:51 -0400
+Processing by ScoreboardsController#game as */*
+  Parameters: {"game_id"=>"350506126"}
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game?game_id=350506107" for ::1 at 2016-10-09 18:15:53 -0400
+Processing by ScoreboardsController#game as */*
+  Parameters: {"game_id"=>"350506107"}
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game?game_id=350506118" for ::1 at 2016-10-09 18:15:56 -0400
+Processing by ScoreboardsController#game as */*
+  Parameters: {"game_id"=>"350506118"}
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game?game_id=350506118" for ::1 at 2016-10-09 18:15:58 -0400
+Processing by ScoreboardsController#game as */*
+  Parameters: {"game_id"=>"350506118"}
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game?game_id=350506109" for ::1 at 2016-10-09 18:16:00 -0400
+Processing by ScoreboardsController#game as */*
+  Parameters: {"game_id"=>"350506109"}
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game?game_id=350506109" for ::1 at 2016-10-09 18:16:02 -0400
+Processing by ScoreboardsController#game as */*
+  Parameters: {"game_id"=>"350506109"}
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/game?game_id=350506104" for ::1 at 2016-10-09 18:16:04 -0400
+Processing by ScoreboardsController#game as */*
+  Parameters: {"game_id"=>"350506104"}
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-09 18:18:19 -0400
+Processing by ScoreboardsController#home as HTML
+  Rendered scoreboards/home.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 72ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scoreboards.self-7702e68b6e7310deb9af5ed4ed0fd611085cd2907f39211771d69985b7bdb6a8.css?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/application.self-696845e2b5e293123d61ff0e709f7c10184cd763ad0691e45cd9a44e8bd59a24.css?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/scoreboards.self-79524bff96deac6be1e8290b7d659ef0b4cf8f77e69d2a078239f5897599c141.js?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/ESPNheader-b51c6259cc249e9623412e7417e88f82e56d2fb2a40008ca0a410db4a4144994.png" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/" for ::1 at 2016-10-09 18:18:19 -0400
+Processing by ScoreboardsController#home as HTML
+  Rendered scoreboards/home.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 69ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/CAN-c660eff95be42743550799ceb884c44e9b5fe06f968f3d2dda69080c12544386.png" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/assets/ESPNbottom-5a00b031c4fc70aa5d86aafe8a670c0026267a5c3a91feecb646e91058cd9f48.png" for ::1 at 2016-10-09 18:18:19 -0400
+
+
+Started GET "/game?game_id=350506227" for ::1 at 2016-10-09 18:18:22 -0400
+Processing by ScoreboardsController#game as */*
+  Parameters: {"game_id"=>"350506227"}
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-09 18:19:28 -0400
+Processing by ScoreboardsController#home as HTML
+  Rendered scoreboards/home.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 163ms (Views: 159.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scoreboards.self-7702e68b6e7310deb9af5ed4ed0fd611085cd2907f39211771d69985b7bdb6a8.css?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/application.self-696845e2b5e293123d61ff0e709f7c10184cd763ad0691e45cd9a44e8bd59a24.css?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/scoreboards.self-c1163cdeba507cbb55b35f510f14285e32b12910d1de5a260a3f2e0ba8117c0a.js?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/ESPNheader-b51c6259cc249e9623412e7417e88f82e56d2fb2a40008ca0a410db4a4144994.png" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/" for ::1 at 2016-10-09 18:19:28 -0400
+Processing by ScoreboardsController#home as HTML
+  Rendered scoreboards/home.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 60ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/CAN-c660eff95be42743550799ceb884c44e9b5fe06f968f3d2dda69080c12544386.png" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/assets/ESPNbottom-5a00b031c4fc70aa5d86aafe8a670c0026267a5c3a91feecb646e91058cd9f48.png" for ::1 at 2016-10-09 18:19:28 -0400
+
+
+Started GET "/game?game_id=350506120" for ::1 at 2016-10-09 18:19:30 -0400
+Processing by ScoreboardsController#game as */*
+  Parameters: {"game_id"=>"350506120"}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
