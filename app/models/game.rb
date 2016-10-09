@@ -25,15 +25,15 @@ class Game < ActiveRecord::Base
     parsed_game[:away_team_name] = game['competitions'][0]['competitors'][1]['team']['name']
     parsed_game[:away_team_record] = game['competitions'][0]['competitors'][1]['team']['record']['summary']
     
-    parsed_game[:home_isWinner?] = game['competitions'][0]['competitors'][0]['isWinner']
+    parsed_game[:home_isWinner] = game['competitions'][0]['competitors'][0]['isWinner']
 
-    if parsed_game[:home_isWinner?] == true || parsed_game[:home_isWinner?] == false
+    if parsed_game[:home_isWinner] == true || parsed_game[:home_isWinner] == false
       parsed_game[:inning] = 'F'
     else
-      parsed_game[:inning] = game['competitions'][0]['period']
+      game['competitions'][0]['period'] == 0 ? parsed_game[:inning] = 'N' : parsed_game[:inning] = game['competitions'][0]['period'].to_s + 'in'
     end
 
-    if parsed_game[:home_isWinner?] == true
+    if parsed_game[:home_isWinner] == true
       parsed_game[:home_team_pitcher] = [
         "#{game['competitions'][0]['stats']['winningPitcher']['athlete']['firstName']}" + ' ' + "#{game['competitions'][0]['stats']['winningPitcher']['athlete']['lastName']}",
         game['competitions'][0]['stats']['winningPitcher']['athlete']['id'].to_s
@@ -42,7 +42,7 @@ class Game < ActiveRecord::Base
         "#{game['competitions'][0]['stats']['losingPitcher']['athlete']['firstName']}" + ' ' + "#{game['competitions'][0]['stats']['losingPitcher']['athlete']['lastName']}",
         game['competitions'][0]['stats']['losingPitcher']['athlete']['id'].to_s
        ]
-    elsif parsed_game[:home_isWinner?] == false
+    elsif parsed_game[:home_isWinner] == false
       parsed_game[:home_team_pitcher] = [
         "#{game['competitions'][0]['stats']['losingPitcher']['athlete']['firstName']}" + ' ' + "#{game['competitions'][0]['stats']['losingPitcher']['athlete']['lastName']}",
         game['competitions'][0]['stats']['losingPitcher']['athlete']['id'].to_s
