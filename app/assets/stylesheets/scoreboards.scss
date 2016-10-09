@@ -2,32 +2,57 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.mainscoreboard {
-  background: image-url('mainscoreboardwithbud.jpg');
-  max-width: 970px;
-  max-height: 250px;
-  display: inline-block;
+p {
+  font-family: "Century Gothic", CenturyGothic, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: white;
+} 
 
-}
-
-.league_scoreboard {
-  text-align: center; 
+.first_row{
   background-color: #ededf0; 
-  display: none;
-}
-
-.tester_class {
-  text-align: center; 
+  text-align: center;
 }
 
 .collapsed_board {
   background-image: url('collapsedAd.jpg');
   background-size: 100% 100%;
+  width: 75.5%;
   max-width: 970px;
   max-height: 66px;
   display: inline-block;
   text-align: left;
   color: white;
+}
+
+#collapsed_text {
+  font-family: "Helvetica Neue", Helvetica, "Century Gothic", CenturyGothic, Arial, sans-serif;
+  font-style: italic;
+  padding-left: 5%;
+  font-size: 1.9em;
+  line-height: 66px;
+}
+
+.mainscoreboard {
+  background: image-url('mainscoreboardwithbud.jpg');
+  width: 75.5%;
+  max-width: 970px;
+  max-height: 250px;
+  display: inline-block;
+  background-size: 100% 100%;
+}
+
+.single_score{
+  font-size: 6em; 
+  color: white;
+  font-family: Rockwell, Courier Bold, Courier, Georgia, Times, Times New Roman, serif;
+}
+
+.scoreboard {
+  text-align: center; 
+  background-color: #ededf0; 
+  display: none;
 }
 
 .score {
@@ -36,20 +61,42 @@
   margin-bottom: -20px;
   margin-top: -10px;
   text-align: left;
+  } 
+
+.single_boxscore {
+  background-color: black; 
+  border: solid 1px; 
+  border-color: #d2ad58;
+}
+
+.popup {
+  background: image-url('popup.png') no-repeat;
+  position: relative;
+  z-index: 2; 
+  height: 280px; 
+  width: 475px;
+}
+
+#popup_left {
+  right: 235px;
+  bottom: 40px;
+}
+
+#home_pitcher{
+  position: fixed;
+  left: 75px;
+  bottom: 0px;
+  z-index: 2;
   }
 
-p {
-  font-family: "Century Gothic", CenturyGothic, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  font-size: 1em;
-  letter-spacing: 1px;
-  color: white;
-}  
-
-#collapsed_text {
-  font-family: "Helvetica Neue", Helvetica, "Century Gothic", CenturyGothic, Arial, sans-serif;
-  font-style: italic;
-  padding-left: 6.5%;
-  font-size: 1.9em;
-  line-height: 66px;
+#popup_right {
+  right: 230px;
+  bottom: 40px;
 }
+
+#away_pitcher{
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  z-index: 2;
+  }

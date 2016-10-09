@@ -3,43 +3,84 @@
     <%= image_tag('ESPNheader.png', style: 'width: 100%')%>
   </div>
 
-  <div class='row tester_class' style='background-color: #ededf0;'>
-      <section class='collapsed_board' style='width: 75.5%;'>
+  <div class='row first_row'>
+      <section class='collapsed_board'>
         <span id='collapsed_text'><u>Get your scores here</u> | "GET YOUR BEER HERE!"</span>
       </section>
   </div>
   
-  <div class='row league_scoreboard'>
+  <div class='row scoreboard'>
     <section class='mainscoreboard' style='width: 75.5%;'>
-        <div class='col-sm-4'></div>
-        <%@scoreboard.each_with_index do |game, i|%>
-          <%if i == 0 || i % 4 == 0%>
-            <div class='col-sm-2' style='padding-bottom: 3%'>
-          <%end%>
-              <div class='row' style='display: inline;'>
-              <%game['id']%>
-                <div class='score' style='margin-right: 7%;'>
-                  <p style='margin-bottom: 2px;'>
-                  <%=game['competitions'][0]['competitors'][0]['team']['abbreviation']%> <%=game['competitions'][0]['competitors'][0]['score']%>
-                  </p>
-                  <p><%=game['competitions'][0]['competitors'][1]['team']['abbreviation']%> <%=game['competitions'][0]['competitors'][1]['score']%></p>
+      <div class='col-sm-4' style='padding-bottom: 100%;'></div>
+        <div id='full_league'>
+          <%@scoreboard.each_with_index do |game, i|%>
+            <%if i == 0 || i % 4 == 0%>
+              <div class='col-sm-2' style='padding-bottom: 3%'>
+            <%end%>
+                <div class='row' style='display: inline;'>
+                  <div class='score' data-id=<%=game['id']%> style='margin-right: 7%;'>
+                    <p style='margin-bottom: 2px;'>
+                    <%=game['competitions'][0]['competitors'][0]['team']['abbreviation']%> <%=game['competitions'][0]['competitors'][0]['score']%>
+                    </p>
+                    <p><%=game['competitions'][0]['competitors'][1]['team']['abbreviation']%> <%=game['competitions'][0]['competitors'][1]['score']%></p>
+                  </div>
+                  <div style='margin-top: -15%'>
+                    <%if game['competitions'][0]['status']['id'] == 1%>
+                      <p>N</p>
+                    <%elsif game['competitions'][0]['status']['id'] == 2%>
+                      <p><%= game['competitions'][0]['period']%>in</p>
+                    <%elsif game['competitions'][0]['status']['id'] == 3%>
+                      <p>F</p>
+                    <%else%>
+                      <p>?</p>
+                    <%end%>
+                  </div>
                 </div>
-                <div style='margin-top: -15%'>
-                  <%if game['competitions'][0]['status']['id'] == 1%>
-                    <p>N</p>
-                  <%elsif game['competitions'][0]['status']['id'] == 2%>
-                    <p><%= game['competitions'][0]['period']%>in</p>
-                  <%elsif game['competitions'][0]['status']['id'] == 3%>
-                    <p>F</p>
-                  <%else%>
-                    <p>?</p>
-                  <%end%>
-                </div>
+            <%if [3,7,11,15].include?(i)%>
               </div>
-          <%if [3,7,11,15].include?(i)%>
-            </div>
+            <%end%>
           <%end%>
-        <%end%>
+        </div>
+      
+    <div id='game_detail' style='display: none;'>
+      <div style='height: 25px'></div>
+      <div class='col-sm-offset-1 col-sm-2' style='margin-left: 3%;'>
+        <p>HOME</p>
+        <div class='single_boxscore home_team'>
+          <span class='single_score'>07</span>
+        </div>
+        <p>TEAM NAME</p>
+
+        <div id='home_popup' style='display: none;'>
+          <div class='popup' id='popup_left'>
+            <img id='home_pitcher' style= 'z-index: 2;' src='http://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/28976.png'>
+            <p style='color:black; text-align: right; padding-right: 30px; padding-top: 70px'>Washington<br>Nationals</p>
+            <p style='color:black; text-align: right; padding-right: 30px;'>13-15</p>
+            <p style='color:black; text-align: right; position: absolute; padding-right: 30px; bottom: 5px; right: 0px;'>Max Schedulfried(w)</p>
+          </div>
+        </div>
+
+      </div>
+      <div class='col-sm-1'><p>F</p></div>
+      <div class='col-sm-2'>
+      <p>AWAY</p>
+        <div class='single_boxscore away_team'>
+          <span class='single_score'>04</span>
+        </div>
+        <p>TEAM NAME</p>
+        <div id='away_popup' style='display: none;'>
+          <div class='popup' id='popup_right'>
+            <img id='away_pitcher' src='http://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/31079.png'>
+            <p style='color:black; text-align: left; padding-left: 30px; padding-top: 70px'>Washington<br>Nationals</p>
+            <p style='color:black; text-align: left; padding-left: 30px;'>14-13</p>
+            <p style='color:black; text-align: left; position: absolute; padding-left: 30px; bottom: 5px; left: 0px;'>Tom Koeler(l)</p>
+          </div>
+        </div>
+      </div>
+      <div class='col-sm-2'>
+        <div style='margin-top: -13px; margin-left: 25px;'><%=image_tag('CAN.png')%></div>
+        </div>
+    </div>
     </section>
   </div>
 
