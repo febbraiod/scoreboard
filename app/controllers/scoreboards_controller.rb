@@ -6,7 +6,7 @@ class ScoreboardsController < ApplicationController
 
   def game
     game_id = params[:game_id].to_i
-    @game = Game.find_game(game_id)
+    @game = Game.parse_game(game_id)
     render json: @game
   end
 

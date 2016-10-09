@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get '/home' => 'scoreboards#home'
+  root 'scoreboards#home'
 
   get '/game' => 'scoreboards#game'
 

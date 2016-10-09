@@ -1,12 +1,12 @@
 $(function() {
-    banner_click();
+    banner_expander();
     setGameBinder();
     hover_home();
     hover_away();
 });
 
-
-function banner_click(){
+// banner to fullboard
+function banner_expander(){
   $('.collapsed_board').click(function () {
       var defaultHeight = "66px";
       var expandHeight = "250px";
@@ -18,15 +18,25 @@ function banner_click(){
   });
 }
 
-
 function switch_boards(){
   $('.collapsed_board').hide();
   $('.scoreboard').show();
 }
 
+ // full board to single game
+function setGameBinder(){
+  $('.score').on('click', function(){
+    var game_id = $(this).data('id');
+    getGame(game_id);
+  });
+}
+
 function getGame(game_id){
   var w = $('.mainscoreboard').width();
   $.get('/game', {game_id: game_id}).done(function(game_data){
+
+      debugger
+
       $('.mainscoreboard').css('background','url(https://s10.postimg.org/wkxm9n5eh/single_game_background.jpg)');
       $('.mainscoreboard').css('background-size','100% 100%');
       $('#game_detail').show();
@@ -41,13 +51,7 @@ function getGame(game_id){
   });
 }
 
-function setGameBinder(){
-  $('.score').on('click', function(){
-    var game_id = $(this).data('id');
-    getGame(game_id);
-  });
-}
-
+// get details on hover
 function hover_home(){
   $('.home_team').hover(
     function(){
