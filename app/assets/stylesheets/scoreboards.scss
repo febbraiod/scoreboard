@@ -39,6 +39,7 @@ p {
   width: 75.5%;
   max-width: 970px;
   max-height: 250px;
+  min-width: 770px;
   display: inline-block;
   background-size: 100% 100%;
 }
@@ -62,7 +63,7 @@ p {
   text-align: left;
 }
 
-.score:hover > p{
+.score:hover > p {
   color: yellow;
   text-decoration: underline;
 }
