@@ -190,7 +190,7 @@ p {
 
 }
 
-@media only screen and (max-width: 1115px) {
+@media only screen and (max-width: 1140px) {
 
   p {
     font-size: .85em;
@@ -199,6 +199,24 @@ p {
     #collapsed_text {
     padding-left: 4%;
     font-size: 1.75em;
+  }
+
+}
+
+@media only screen and (max-width: 1095px) {
+
+  p {
+    font-size: .80em;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 1095px) {
+
+  p {
+    font-size: .75em;
   }
 
 }

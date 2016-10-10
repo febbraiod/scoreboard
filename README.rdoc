@@ -8,9 +8,19 @@ write instructions on local load:
 4) start rails server with 'rails s'
 5) open http://localhost:3000/ in browser
 
+  -or-
+
+visit for live version:
+
+https://espn-scoreboard.herokuapp.com/
+
+
 
 monday:
 
-put up on heroku
+how can i make it more obvious thta you can click on the scores for the detail screen? 
+
+hightlight div on hover??
+underline text on hover?
 
 record demo
