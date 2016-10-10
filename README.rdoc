@@ -10,10 +10,8 @@ instructions:
 
 visit for live version:
 
-https://espn-scoreboard.herokuapp.com/
+https://espn-scoreboard.herokuapp.com
 
+or for a video demo:
 
-
-monday:
-
-record demo
+https://youtu.be/zGw2ivpbssg
