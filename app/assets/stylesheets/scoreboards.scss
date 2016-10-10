@@ -16,7 +16,7 @@ p {
 }
 
 .collapsed_board {
-  background-image: url('collapsedAd.jpg');
+  background-image: url('https://s15.postimg.org/mgab7j497/collapsed_Ad.jpg');
   background-size: 100% 100%;
   width: 75.5%;
   max-width: 970px;
@@ -175,4 +175,30 @@ p {
 #popup_right {
   right: 230px;
   bottom: 40px;
+}
+
+@media only screen and (max-width: 1230px) {
+
+  p {
+    font-size: .9em;
+  }
+
+  #collapsed_text {
+    padding-left: 5%;
+    font-size: 1.8em;
+  } 
+
+}
+
+@media only screen and (max-width: 1115px) {
+
+  p {
+    font-size: .85em;
+  }
+
+    #collapsed_text {
+    padding-left: 4%;
+    font-size: 1.75em;
+  }
+
 }

@@ -1,2 +1,16 @@
+sunday:
 
-link pitcher name to player detail page
+write instructions on local load:
+
+1) clone to local machine from github
+2) navigate to cloned folder in terminal
+3) run bundle install
+4) start rails server with 'rails s'
+5) open http://localhost:3000/ in browser
+
+
+monday:
+
+put up on heroku
+
+record demo
