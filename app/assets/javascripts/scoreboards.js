@@ -81,13 +81,11 @@ function leagueToSingleToggle(){
     $('.mainscoreboard').css('background-size','100% 100%');
     $('#game_detail').show();
     $('#full_league').hide();
-    $('.mainscoreboard').css('cursor', 'pointer');
   }else{
     $('.mainscoreboard').css('background','url(https://s21.postimg.org/8v330itif/mainscoreboardwithbud.jpg');
     $('.mainscoreboard').css('background-size','100% 100%');
     $('#full_league').show(); 
     $('#game_detail').hide();
-    $('.mainscoreboard').css('cursor', 'auto');
   }
 }
 
