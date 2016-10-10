@@ -60,7 +60,12 @@ p {
   margin-top: -10px;
   margin-right: 7%;
   text-align: left;
-  } 
+}
+
+.score:hover > p{
+  color: yellow;
+  text-decoration: underline;
+}
 
 .game_status {
   margin-top: -15%;

@@ -1,6 +1,4 @@
-sunday:
-
-write instructions on local load:
+instructions:
 
 1) clone to local machine from github
 2) navigate to cloned folder in terminal
@@ -17,10 +15,5 @@ https://espn-scoreboard.herokuapp.com/
 
 
 monday:
-
-how can i make it more obvious thta you can click on the scores for the detail screen? 
-
-hightlight div on hover??
-underline text on hover?
 
 record demo
