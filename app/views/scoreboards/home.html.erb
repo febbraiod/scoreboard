@@ -11,7 +11,9 @@
   
   <div class='row scoreboard'>
     <section class='mainscoreboard'>
-      <div class='col-sm-4' style='padding-bottom: 100%;'></div>
+      <%= link_to 'http://www.budweiser.com/', {:target => "_blank"} do %>
+        <div class='col-sm-4' style='padding-bottom: 100%;'></div>
+      <%end%>
         <div id='full_league'>
           <%@scoreboard.each_with_index do |game, i|%>
             <%if i % 4 == 0%>
