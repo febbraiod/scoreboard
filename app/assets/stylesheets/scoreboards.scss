@@ -96,7 +96,8 @@ p {
 }
 
 .single_score{
-  font-size: 6em; 
+  font-size: 5.9em; 
+  padding: 0 0 0 0;
   color: white;
   font-family: Rockwell, Courier Bold, Courier, Georgia, Times, Times New Roman, serif;
 }
@@ -114,6 +115,15 @@ p {
   border: solid 1px; 
   border-color: #d2ad58;
   cursor: pointer;
+  margin-top: -5px;
+}
+
+#home_team_name{
+  margin-top: 9px;
+}
+
+#away_team_name{
+  margin-top: 9px;
 }
 
 #can{
