@@ -97,10 +97,7 @@ function backToLeague(){
 function hover_home(){
   $('#home_hover').hover(
     function(){
-      $('#home_popup').show();
-    },
-    function(){
-      $('#home_popup').fadeOut(100);
+      $('#home_popup').stop(true, true).fadeToggle(150);
     }
   );
 }
@@ -108,11 +105,7 @@ function hover_home(){
 function hover_away(){
   $('#away_hover').hover(
     function(){
-      $('#away_popup').show();
-    },
-    function(){
-      $('#away_popup').fadeOut(100);
-    }
-  );
+      $('#away_popup').stop(true, true).fadeToggle(150);
+    });
 }
 
