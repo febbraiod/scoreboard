@@ -1,7 +1,7 @@
 $(function() {
     banner_expander();
     setGameBinder();
-    bind_detail();
+    backToLeague();
     hover_home();
     hover_away();
 });
@@ -81,23 +81,25 @@ function leagueToSingleToggle(){
     $('.mainscoreboard').css('background-size','100% 100%');
     $('#game_detail').show();
     $('#full_league').hide();
+    $('.mainscoreboard').css('cursor', 'pointer');
   }else{
     $('.mainscoreboard').css('background','url(https://s21.postimg.org/8v330itif/mainscoreboardwithbud.jpg');
     $('.mainscoreboard').css('background-size','100% 100%');
     $('#full_league').show(); 
     $('#game_detail').hide();
+    $('.mainscoreboard').css('cursor', 'auto');
   }
 }
 
-function bind_detail(){
-  $('#game_detail').click(function(){leagueToSingleToggle();});
+function backToLeague(){
+  $('#click_out').click(function(){leagueToSingleToggle();});
 }
 
 // get details on hover
 function hover_home(){
   $('#home_hover').hover(
     function(){
-      $('#home_popup').fadeIn(200);
+      $('#home_popup').show();
     },
     function(){
       $('#home_popup').fadeOut(100);
@@ -108,7 +110,7 @@ function hover_home(){
 function hover_away(){
   $('#away_hover').hover(
     function(){
-      $('#away_popup').fadeIn(200);
+      $('#away_popup').show();
     },
     function(){
       $('#away_popup').fadeOut(100);

@@ -32,6 +32,7 @@ p {
   padding-left: 5%;
   font-size: 1.9em;
   line-height: 66px;
+  cursor: pointer;
 }
 
 .mainscoreboard {
@@ -42,6 +43,7 @@ p {
   min-width: 770px;
   display: inline-block;
   background-size: 100% 100%;
+  position: relative;
 }
 
 .scoreboard {
@@ -61,12 +63,25 @@ p {
   margin-top: -10px;
   margin-right: 7%;
   text-align: left;
+  cursor: pointer;
 }
 
 .score:hover > p {
   color: yellow;
   text-decoration: underline;
 }
+
+#click_out{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: red;
+  opacity:0;
+  cursor: pointer;
+}
+
 
 .game_status {
   margin-top: -15%;
