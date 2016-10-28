@@ -77,12 +77,12 @@ function writeSingleGame(game_data){
 
 function leagueToSingleToggle(){
   if($('#full_league').is(':visible')){
-    $('.mainscoreboard').css('background','url(https://s3.postimg.org/jyc1nakyr/single_game_background.jpg)');
+    $('.mainscoreboard').css('background','url(http://s3.postimg.org/jyc1nakyr/single_game_background.jpg)');
     $('.mainscoreboard').css('background-size','100% 100%');
     $('#game_detail').show();
     $('#full_league').hide();
   }else{
-    $('.mainscoreboard').css('background','url(https://s21.postimg.org/8v330itif/mainscoreboardwithbud.jpg');
+    $('.mainscoreboard').css('background','url(http://s21.postimg.org/8v330itif/mainscoreboardwithbud.jpg');
     $('.mainscoreboard').css('background-size','100% 100%');
     $('#full_league').show(); 
     $('#game_detail').hide();
